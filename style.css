@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.heading{
+    color: rgb(235, 231, 231);
+    text-transform: capitalize;
+    /* padding: 20px; */
+    margin: 20px;
+}
+.heading h1{
+    padding: 10px;
+}
+body{
+    background-color: rgb(42, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 480px;
+    width: 300px;
+    background-color: rgb(228, 220, 220);
+    border: 1px solid black;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.storiyan{
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 2px solid #dadada;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.storiyan::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.full-screen{
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: cover;
+    /* object-fit: cover; */
+
+}
